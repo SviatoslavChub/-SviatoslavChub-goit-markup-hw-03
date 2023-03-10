@@ -86,6 +86,7 @@ background-color: var(--main-color);
 }
 
 .main-button {
+font-family: inherit;
 color: var(--white-general-color);
 background-color: var(--logo-iteam-decor);
 font-weight: 500;
@@ -93,16 +94,34 @@ font-size: 16px;
 line-height: 1.5; 
 align-items: center;
 letter-spacing: 0.04em;
+cursor: pointer;
+width: 105px;
+height: 24px;
+padding: 16px 32px;
+left: 636px;
+top: 428px;
 }
+
+.main-button:hover,
+.main-button:focus {
+color: var(--white-general-color);
+background-color: var(--header-button);
+cursor: pointer;
+}
+
 .adress {
 font-style: normal;
 }
 
 .hero-button {
+font-family: inherit;
 color: var(--logo-iteam-decor);
 font-weight: 500;
 line-height: 1.5;
 background-color: var(--footer-color);
+padding: 12px 24px;
+letter-spacing: 0.04em;
+cursor: pointer;
 }
 
 .hero-button:hover,
@@ -117,13 +136,18 @@ color: var(--main-color);
 }
   
 .hero-subtitle{
-font-size: 18px;
-line-height: 2;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--main-color);
 }
 
 .hero-text{
 color: var(--secondary-color);
-line-height: 1.87;    
+ font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 
 .section-team {
@@ -135,7 +159,6 @@ background-color: var(--main-color);
 }
 
 .logo-about {
-font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--footer-color);
@@ -143,7 +166,7 @@ color: var(--footer-color);
 
 
 
-.secondary-subtitle {
+.future-subtitle {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -151,8 +174,7 @@ letter-spacing: 0.02em;
 color: var(--main-color);
 }
 
-.secondary-text {
-font-size: 16px;
+.future-text {
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--secondary-color);
@@ -178,7 +200,7 @@ text-transform: capitalize;
 color: var(--main-color);
 }
 
-.subtitle-team { 
+.title-team { 
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -188,7 +210,6 @@ color: var(--main-color);
 }
 
 .text-team {
-font-size: 16px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;

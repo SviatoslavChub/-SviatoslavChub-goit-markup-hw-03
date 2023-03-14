@@ -133,10 +133,6 @@ text-align: center;
 
 .main-section {
     background-color: var(--main-color);
-    height: 600px;
-    width: 1440px;
-    left: 0px;
-    top: 72px;
 }
 
 .main-button {
@@ -152,6 +148,7 @@ text-align: center;
     min-width: 169px;
     height: 56px;
     border: none;
+    font-size: 16px;
 }
 
 .main-button:hover,
@@ -174,6 +171,7 @@ text-align: center;
     padding: 12px 24px;
     letter-spacing: 0.04em;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .hero-button:hover,
@@ -181,6 +179,7 @@ text-align: center;
     color: var(--white-general-color);
     background-color: var(--header-button);
     cursor: pointer;
+    
 }
 
 .hero-button:active {
@@ -270,7 +269,7 @@ text-align: center;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .title-team {
@@ -291,4 +290,10 @@ text-align: center;
 
 .team-list {
     margin-top: 120px;
+}
+
+.footer-text {
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--footer-color);
 }

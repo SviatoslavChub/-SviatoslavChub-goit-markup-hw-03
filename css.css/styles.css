@@ -69,6 +69,7 @@ text-align: center;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+    margin-right: 76px;
 }
 
 .logo {
@@ -78,7 +79,9 @@ text-align: center;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+    margin-left: 156px;
 }
+
 
 .footer-logo-span {
     color: var(--white-secondary-color);
@@ -93,6 +96,7 @@ text-align: center;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 }
 
 .navigation-list .navigation-link:hover,
@@ -105,16 +109,43 @@ text-align: center;
     color: var(--header-button);
 }
 
+.navigation-list {
+    
+    display: flex;
+}
+
+.navigation-item {
+    margin-right: 40px;
+}
+
+.navigation-item:last-child {
+    margin-right: 0px;
+}
+
 .adress-link {
     color: var(--secondary-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+.adress-item + .adress-item {
+    margin-left: 40px;
+}
+
+
 .adress-list .adress-link:hover,
 .adress-list .adress-link:focus {
     color: var(--header-button);
 }
+
+.adress-list {
+    display: flex;
+    margin-left: auto;
+   
+   
+}
+
+
 
 .main-title {
     font-weight: 700;
@@ -295,7 +326,17 @@ text-align: center;
 }
 
 .footer-text {
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-color);
 }
+
+.container-header {
+    display: flex;
+    
+} 
+
+.main-nav {
+    display: flex;
+}
+

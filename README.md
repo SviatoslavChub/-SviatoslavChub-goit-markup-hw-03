@@ -1,1 +1,2 @@
-# goit-markup-hw-02
+<nav class="container main-nav">
+margin-left: 400px;

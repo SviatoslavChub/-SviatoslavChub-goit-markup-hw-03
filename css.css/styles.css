@@ -46,7 +46,9 @@ body {
     list-style: none;
 }
 
-.container {
+
+
+.container-header {
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
@@ -54,11 +56,6 @@ body {
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
-    
-    
-}
-
-.container-header {
     display: flex;
     align-items: center;
 } 
@@ -280,13 +277,17 @@ background: var(--section-team-color);
 }
 
 .future-list {
-display: flex;
-flex-wrap: wrap;
-margin-top: 120px;
-width: 1128px;
-margin-left: auto;
-margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
 
+.container-description { 
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .future-item {
@@ -294,7 +295,7 @@ width: 264px;
 margin-right: 24px;
 }
 
-.future-item:nth-child(4) {
+.future-item:nth-child(3) {
     margin-right: 0;
 }
 
@@ -313,7 +314,6 @@ margin-right: 24px;
 
 .apps-subtitle {
     padding-bottom: 72px;
-    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -330,10 +330,10 @@ margin-right: 24px;
 }
 
 .image-item-apps {
-   margin-right: 24px; 
+    
 }
-.image-item-apps:nth-child(3) {
-    margin-right: 0;
+.image-item-apps:not(:last-child) {
+    margin-right: 24px;
 }
 
 .image-apps {
@@ -343,16 +343,17 @@ margin-right: 24px;
 
 .team-list {
     display: flex;
+    margin-top: 120px;
 }
 
 .team-item {
-    margin-right: 24px;
-background-color: var(--white-general-color);
-margin-bottom: 120px;
+    
+    background-color: var(--white-general-color);
+    margin-bottom: 120px;
 }
 
-.team-item:nth-child(4) {
-    margin-right: 0;
+.team-item:not(:last-child) {
+    margin-right: 24px;
 }
 
 .team-title {
@@ -363,6 +364,8 @@ margin-bottom: 120px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-color);
+
+    padding-top: 120px ;
 }
 
 .text-container {
@@ -398,10 +401,6 @@ margin-bottom: 120px;
     color: var(--secondary-color);
 }
 
-.team-list {
-    margin-top: 120px;
-}
-
 .footer-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -415,7 +414,15 @@ margin-bottom: 120px;
 
 .hero-list {
     display: flex;
-    
+    justify-content: center;
+}
+
+.hero-item {
+justify-content: center;
+}
+
+.hero-item:not(:last-child) {
+margin-right: 24px;
 }
 
 .hero-title-list {

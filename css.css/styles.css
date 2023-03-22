@@ -409,10 +409,20 @@ margin-bottom: 120px;
     padding-top: 16px;
 }
 
-
-
 .main-nav {
+    display: flex;
+}
+
+.hero-list {
     display: flex;
     
 }
 
+.hero-title-list {
+    display: flex;
+}
+
+.hero-title-content {
+    width: 360px;
+    height: 420px;
+}

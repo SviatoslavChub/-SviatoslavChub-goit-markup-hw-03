@@ -47,29 +47,37 @@ body {
 }
 
 .container {
+    margin-left: auto;
+    margin-right: auto;
     width: 1158px;
+    height: 72px;
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
+    
+    
 }
 
-.container-title {
+.container-header {
+    display: flex;
+    align-items: center;
+} 
+
+.main-section {
    margin: 0 auto; 
-text-align: center;
+   text-align: center;
 }
 
-.header {
-    padding-top: 29px;
-}
-
-.logo-link {
+ .logo-link {
+    margin-right: 76px;
+    
     color: var(--main-color);
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    margin-right: 76px;
+    
 }
 
 .logo {
@@ -79,7 +87,6 @@ text-align: center;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    margin-left: 156px;
 }
 
 
@@ -96,7 +103,6 @@ text-align: center;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
 }
 
 .navigation-list .navigation-link:hover,
@@ -110,17 +116,14 @@ text-align: center;
 }
 
 .navigation-list {
-    
     display: flex;
 }
 
-.navigation-item {
+.navigation-item:not(:last-child) {
     margin-right: 40px;
 }
 
-.navigation-item:last-child {
-    margin-right: 0px;
-}
+
 
 .adress-link {
     color: var(--secondary-color);
@@ -140,31 +143,28 @@ text-align: center;
 
 .adress-list {
     display: flex;
-    margin-left: auto;
-   
    
 }
 
-
-
 .main-title {
+    margin-bottom: 56px;
+    
     font-weight: 700;
     font-size: 56px;
     line-height: 1;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-general-color);
-    margin-bottom: 56px;
+    
+    
 }
 
 .main-section {
     padding-top: 120px;
     padding-bottom: 120px;
-}
-
-.main-section {
     background-color: var(--main-color);
 }
+
 
 .main-button {
     font-family: inherit;
@@ -191,6 +191,8 @@ text-align: center;
 
 .adress {
     font-style: normal;
+    margin-left: auto;
+    
 }
 
 .hero-button {
@@ -234,11 +236,25 @@ text-align: center;
 }
 
 .section-team {
-    background: var(--section-team-color);
-    
+    margin-left: 156px;
+    margin-right: 156px; 
+}
+
+.container-team {
+background: var(--section-team-color);
 }
 
 .footer-about {
+  
+  height: 110px;
+  padding-top: 100px; 
+  padding-left: 156px;
+ 
+}
+
+.footer-container {
+    width: 1440px;
+    height: 310px;
     background-color: var(--main-color);
 }
 
@@ -248,20 +264,38 @@ text-align: center;
     color: var(--footer-color);
 }
 
-
-
 .future-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-color);
+    
 }
 
 .future-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+}
+
+.future-list {
+display: flex;
+flex-wrap: wrap;
+margin-top: 120px;
+width: 1128px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.future-item {
+width: 264px;
+margin-right: 24px;
+}
+
+.future-item:nth-child(4) {
+    margin-right: 0;
 }
 
 .visually-hidden {
@@ -278,6 +312,8 @@ text-align: center;
 }
 
 .apps-subtitle {
+    padding-bottom: 72px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -285,6 +321,38 @@ text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-color);
+}
+
+.apps-section {
+    margin-top: 120px;
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
+.image-item-apps {
+   margin-right: 24px; 
+}
+.image-item-apps:nth-child(3) {
+    margin-right: 0;
+}
+
+.image-apps {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-item {
+    margin-right: 24px;
+background-color: var(--white-general-color);
+margin-bottom: 120px;
+}
+
+.team-item:nth-child(4) {
+    margin-right: 0;
 }
 
 .team-title {
@@ -296,6 +364,14 @@ text-align: center;
     text-transform: capitalize;
     color: var(--main-color);
 }
+
+.text-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .subtitle-team {
     font-weight: 500;
     font-size: 20px;
@@ -303,6 +379,7 @@ text-align: center;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-color);
+    padding-bottom: 8px;
 }
 
 .title-team {
@@ -329,14 +406,13 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-color);
+    padding-top: 16px;
 }
 
-.container-header {
-    display: flex;
-    
-} 
+
 
 .main-nav {
     display: flex;
+    
 }
 

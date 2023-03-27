@@ -444,6 +444,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--line-footer-color);
     margin-top: 16px;
+    width: 264px;
 }
 
 
